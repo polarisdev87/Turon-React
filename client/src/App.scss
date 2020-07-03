@@ -1,0 +1,23 @@
+$theme-colors: (
+    'secondary': #6a00b1
+);
+
+@import '~bootstrap/scss/bootstrap';
+
+.no-button{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.btn-linkedin{
+    width: 48px;
+    height: 48px;
+    img{
+        border-radius: 5px;
+    }
+}

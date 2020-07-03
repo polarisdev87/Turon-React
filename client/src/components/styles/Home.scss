@@ -1,0 +1,180 @@
+
+
+.navbar{
+    &.bg-transparent{
+        @media only screen and (max-width: 991px) {
+            background-color: #212529!important;
+        }
+    }
+
+    position: absolute;
+    z-index: 999999;
+
+    @media only screen and (max-width: 991px){
+        position: fixed;
+    }
+}
+
+.home{
+    &-hero{
+        background-image: url('./../../images/Home.JPG');
+        background-repeat: no-repeat;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-position: 0 0;
+        background-size: 100% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+
+        @media (max-width: 768px){
+            padding-top: 120px;
+        }
+        
+        @media only screen and (max-width: 500px){
+            min-height: 70vh;
+            background-size: auto 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+
+
+        h1{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 2.5rem;
+
+            @media only screen and (max-width: 768px){
+                font-size: 1.75rem;
+            }
+        }
+
+        h2{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 2rem;
+
+            @media only screen and (max-width: 768px){
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &-find{
+        text-align: center;
+        padding: 70px 0;
+
+        h2{
+            font-size: 2.5rem;
+            color: #222222;
+            margin-bottom: 2rem;
+        }
+
+        .row{
+            img{
+                height: 100%;
+                width: auto;
+                max-width: 200px;
+                max-height: 120px;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &-footer{
+        text-align: center;
+        background-color: #cdcdcd;
+        padding: 70px 0;
+
+        .row{
+            img{
+                width: 100%;
+                max-width: 300px;
+                margin: auto;
+                margin-bottom: 1rem;
+            }
+
+            h3{
+                color: #222222;
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-align: left;
+                width: max-content;
+                max-width: 90vw;
+                margin: auto;
+                margin-left: 1rem;
+                font-size: .85rem;
+
+                li{
+                    margin: .5rem 0;
+
+                    &:before{
+                        content: '';
+                        background: url(../../images/arrow.jpg);
+                        width: 20px;
+                        float: left;
+                        height: 20px;
+                        position: relative;
+                        z-index: 9;
+                        background-size: 100% 100%;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.layout{
+    background-image: url('./../../images/Loginimg.jpg');
+    min-width: 100vw;
+    min-height: 100vh;
+    background-position: 0 0;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 100px 0 50px;
+}
+
+.button-group{
+    button{
+        &:first-child{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-width: 2px;
+            border-right-width: 1px;
+        }
+
+        &:last-child{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-width: 2px;
+            border-left-width: 1px;
+        }
+
+        &:hover{
+            color: white!important;
+        }
+    }
+}
+
+.no-button{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}

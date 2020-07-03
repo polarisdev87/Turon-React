@@ -1,0 +1,120 @@
+.profile-container {
+    width: 960px;
+    height: 200px;
+    padding: 20px 30px;
+    background: white;
+    color: black;
+
+    .row {
+        .avatar {
+            width: 10%;
+            padding: 10px;
+            display: inline-block;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+        }
+
+        .detail-header {
+            width: 85%;
+            display: inline-block;
+            .header-left {
+                overflow: hidden;
+                font-size: 15px;
+                width: 400px;
+                display: inline-block;
+                
+                .name {
+                    color: #37A000;
+                    font-weight: 500;
+                    user-select: 0;
+                }
+
+                .subjects {
+                    font-weight: 700;
+                    white-space: nowrap;
+                }
+            }
+
+            .header-right {
+                display: flex;
+                float: right;
+                text-align: center;
+                font-weight: 500;
+                font-size: 15px;
+
+                .like {
+                    width: 38px;
+                    color: #37A000;
+                    font-size: 14px !important;
+                    padding: 7px 6px 6px;
+                    outline: none;
+                    border-radius: 50%;
+                    border: solid 2px transparent;
+                    -webkit-font-smoothing: antialiased;
+                    box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
+                    vertical-align: middle;
+                    margin: 0 20px 20px 0;
+                }
+
+                .view-tutor {
+                    margin-left: 15px;
+                    color: #37A000;
+                    min-width: 120px;
+                    padding: 7px 18px;
+                    box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
+                    margin: 0 20px 20px 0;
+                }
+
+                .post-job {
+                    min-width: 120px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 7px 18px;
+                    color: white;
+                    background-color: #37A000;
+                    border-radius: 2px;
+                    margin: 0 0px 20px 0;
+                }
+            }
+        }
+    }
+
+    .row:nth-child(2) {
+        padding-left: 93px;
+        padding-right: 30px;
+        font-size: 15px;
+        .detail-center {
+            
+            .description {
+                line-height: 19px;
+                word-break: break-all;
+                overflow: hidden;
+                box-lines: 2;
+            }
+        }
+
+        .detail-bottom {
+            margin-top: 10px;
+
+            .rate {
+                display: inline-block;
+                width: 250px;
+            }
+
+            .bio {
+                display: inline-block;
+                width: 250px;
+            }
+
+            .zip-code {
+                display: inline-block;
+                width: 250px;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "amazon-cognito-identity-js": "^3.0.9",
+    "aws-sdk": "^2.418.0",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "form-urlencoded": "^3.0.0",
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "kleur": "^3.0.1",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.2.0",
+    "react-calendar": "^2.17.5",
+    "react-cognito": "^1.5.4",
+    "react-dom": "^16.2.0",
+    "react-facebook-login": "^4.1.1",
+    "react-file-base64": "^1.0.3",
+    "react-google-login": "^5.0.2",
+    "react-image-file": "^0.3.0",
+    "react-images-upload": "^1.2.6",
+    "react-linkedin-login": "^1.0.3",
+    "react-linkedin-login-oauth2": "^1.0.6",
+    "react-linkedin-sdk": "^1.0.12",
+    "react-moment": "^0.8.4",
+    "react-notification-badge": "^1.4.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^2.1.5",
+    "react-stars": "^2.2.5",
+    "reactstrap": "^5.0.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "rxjs": "^6.4.0",
+    "socket.io-client": "^2.2.0",
+    "sweetalert2": "^8.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "initial-start": "yarn && yarn start"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
